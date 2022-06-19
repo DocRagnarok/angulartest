@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calapp.component.css'],
 })
 export class CalappComponent implements OnInit {
+  pad = '';
   ngOnInit(): void {
     const number = document.querySelectorAll('[ตัวเลข]');
     const buak = document.querySelectorAll('[คำสั่ง]');
