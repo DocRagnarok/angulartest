@@ -79,3 +79,7 @@
 .ปุ่มธรรมดาก็พอ {
   cursor: pointer;
 }
+.คำตอบ {
+  font-size: 2.5rem;
+  color: white;
+}
