@@ -10,15 +10,15 @@ export class CalappComponent implements OnInit {
   first = '';
   second = '';
   equal: number;
-  clicked = false;
+  clicked: Boolean = false;
   clickclear = false;
-  type = '';
+  type: string = '';
   buak = '';
   clear = '';
 
   ngOnInit(): void {}
 
-  onClick(value: any) {
+  onClick(value: string) {
     if (this.clicked) {
       this.second += value;
     } else {
@@ -27,7 +27,6 @@ export class CalappComponent implements OnInit {
   }
   onClickOperation(type: any) {
     this.clicked = true;
-    console.log(type);
     this.type = type;
   }
   onClickEqual() {
@@ -62,7 +61,7 @@ export class CalappComponent implements OnInit {
       console.log(this.equal);
     }
   }
-  onClickClear(araimairu: any) {
+  onClickClear() {
     this.clickclear = true;
     this.first = '';
     this.second = '';
@@ -74,6 +73,18 @@ export class CalappComponent implements OnInit {
       this.second += value;
     } else {
       this.first += value;
+    }
+  }
+  onClickDel() {
+    this.equal = null;
+    if (!this.clicked) {
+      this.first = this.first.slice(0, -1);
+    } else {
+      if (this.second == '') {
+        this.clicked = false;
+      } else {
+        this.second = this.second.slice(0, -1);
+      }
     }
   }
 }

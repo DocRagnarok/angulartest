@@ -7,10 +7,7 @@
   </section>
   <section class="ปุ่มกด">
     <div class="ปุ่ม">
-      <button
-        (click)="onClickClear('clear')"
-        class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ"
-      >
+      <button (click)="onClickClear()" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
         {{ clear }}Clear
       </button>
       <button (click)="onClickOperation('buak')" class="ปุ่มคำสั่ง">บวก</button>
@@ -34,8 +31,10 @@
         0
       </button>
       <button (click)="onClickDot('.')" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
-        .
-      </button>
+        .</button
+      ><br />
+
+      <button (click)="onClickDel()" class="ปุ่มลบ">del</button>
     </div>
   </section>
 </div>
