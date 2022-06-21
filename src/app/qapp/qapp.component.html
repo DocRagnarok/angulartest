@@ -1,1 +1,41 @@
-<p>qapp works!</p>
+<div class="interface">
+  <p>ใส่ชื่อของนายก่อนเริ่มทำควิซ</p>
+  <div class="picture1">
+    <img
+      src="/assets/Image/quiz.jpg
+    "
+      style="position: relative; width: 20%"
+    /><img
+      src="/assets/Image/quiz.jpg
+  "
+      style="position: relative; width: 20%"
+    /><img
+      src="/assets/Image/quiz.jpg
+"
+      style="position: relative; width: 20%"
+    />
+    <img
+      src="/assets/Image/quiz.jpg
+    "
+      style="position: relative; width: 20%"
+    />
+    <img
+      src="/assets/Image/quiz.jpg
+    "
+      style="position: relative; width: 20%"
+    /><br />
+  </div>
+  <p>ใส่ชื่อตรงนี้</p>
+  <form name="regisname">
+    <input type="text" value="" name="txt1" /><br />
+    <button onclick="startonclick()" class="ขี้เกียจcssจัง">
+      เอาชื่อนี้หล่ะ
+    </button>
+  </form>
+</div>
+<script type="text/javascript">
+  function startonclick() {
+    var name = document.regisname.txt1.value;
+    windows.alert("hello" + name);
+  }
+</script>
