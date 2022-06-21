@@ -7,9 +7,32 @@
     color: white;
   "
 >
-  <map name="jb"><a href="jb.html">หน้าแรก</a> </map>
-
+  <nav>
+    <ul>
+      <a
+        routerLink="/image"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >image</a
+      >
+      <a
+        routerLink="/calculator"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        calculator
+      </a>
+      <a
+        routerLink="/quiz"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        quiz
+      </a>
+    </ul>
+  </nav>
   <p>ชีวะประวัติ</p>
   <p>Download</p>
   <p>Donate</p>
 </div>
+<router-outlet></router-outlet>

@@ -5,19 +5,21 @@ import { NavBarModule } from 'src/nav-bar/nav-bar.module';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CalappModule } from './calapp/calapp.module';
-import { QuizComponent } from './quiz/quiz.component';
+import { QappModule } from './qapp/qapp.module';
 
 @NgModule({
-  declarations: [AppComponent, QuizComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     NavBarModule,
     HomecomModule,
     CalappModule,
     FormsModule,
-    QuizComponent,
+    QappModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+//ห้าม declarations component หลายที่ ถ้านาย ไม่อยากทำเป็น module ให้ทำแบบนี้
