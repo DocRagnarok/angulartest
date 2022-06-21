@@ -13,7 +13,6 @@ export class CalappComponent implements OnInit {
   clicked: Boolean = false;
   clickclear = false;
   type: string = '';
-
   clear = '';
 
   ngOnInit(): void {}

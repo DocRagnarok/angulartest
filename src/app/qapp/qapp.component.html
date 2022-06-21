@@ -1,4 +1,4 @@
-<div class="interface">
+<div class="interface" id="interface">
   <p>ใส่ชื่อของนายก่อนเริ่มทำควิซ</p>
   <div class="picture1">
     <img
@@ -26,16 +26,36 @@
     /><br />
   </div>
   <p>ใส่ชื่อตรงนี้</p>
-  <form name="regisname">
-    <input type="text" value="" name="txt1" /><br />
-    <button onclick="startonclick()" class="ขี้เกียจcssจัง">
-      เอาชื่อนี้หล่ะ
-    </button>
-  </form>
+
+  <div class="dewdongu">
+    <input [(ngModel)]="text" name="name" placeholder="เอาแค่ชื่อ" />
+    <button (click)="buttonclick()">click</button>
+  </div>
 </div>
-<script type="text/javascript">
-  function startonclick() {
-    var name = document.regisname.txt1.value;
-    windows.alert("hello" + name);
-  }
-</script>
+<div id="quiz1" class="quiz1">
+  <p class="คำถาม">
+    Q1 : ในกีฬาวิ่งแข่งถ้าคุณแซงที่ 2 ได้ คุณจะอยู่อันดับที่เท่าไหร่ !
+  </p>
+  <img
+    src="/assets/Image/run.gif"
+    style="
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      align-items: center;
+    "
+  /><br />
+  <input
+    [(ngModel)]="text2"
+    name="name"
+    placeholder="ตอบแค่ตัวเลข"
+    style="display: block; margin-left: auto; margin-right: auto"
+  />
+  <button
+    (click)="ansbutton1()"
+    style="display: block; margin-left: auto; margin-right: auto"
+  >
+    ตอบ
+  </button>
+</div>

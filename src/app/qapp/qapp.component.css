@@ -1,7 +1,6 @@
 .interface {
   display: flex;
   flex-flow: column nowrap;
-
   min-height: 50px;
   padding: 20px;
   font-size: 2.5rem;
@@ -14,4 +13,15 @@
   flex-flow: row;
   min-height: 120px;
   text-align: center;
+}
+
+.quiz1 {
+  display: none;
+  text-align: center;
+  flex-flow: column nowrap;
+}
+.คำถาม {
+  display: flex;
+  text-align: center;
+  flex-flow: column nowrap;
 }

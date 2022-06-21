@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CalappModule } from './calapp/calapp.module';
 import { QappModule } from './qapp/qapp.module';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { QappModule } from './qapp/qapp.module';
     CalappModule,
     FormsModule,
     QappModule,
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
