@@ -25,14 +25,32 @@
       style="position: relative; width: 20%"
     /><br />
   </div>
-  <p>ใส่ชื่อตรงนี้</p>
+  <div>
+    <p>ตอบถูกได้รับคะแนน</p>
+    <p style="color: greenyellow">+1000 Social Credit</p>
+    <p>ตอบผิด</p>
+    <p style="color: red">-100 Social Credit</p>
+    <p>ใช้ตัวช่วย</p>
+  </div>
+
+  <p style="color: red">-250 Social Credit</p>
+  <p>เอาละใส่ชื่อของนายมาได้แล้ว</p>
 
   <div class="dewdongu">
     <input [(ngModel)]="text" name="name" placeholder="เอาแค่ชื่อ" />
     <button (click)="buttonclick()">click</button>
   </div>
 </div>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
 <div id="quiz1" class="quiz1">
+  <div>
+    <button (click)="closemusic()" class="btn">
+      <i class="fa fa-close"></i> Close Music
+    </button>
+  </div>
   <p class="คำถาม">
     Q1 : ในกีฬาวิ่งแข่งถ้าคุณแซงที่ 2 ได้ คุณจะอยู่อันดับที่เท่าไหร่ !
   </p>
