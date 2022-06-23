@@ -1,0 +1,39 @@
+.interface {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 50px;
+    padding: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .picture1 {
+    display: flex;
+    flex-flow: row;
+    min-height: 120px;
+    text-align: center;
+  }
+  
+  .quiz1 {
+    display: none;
+    text-align: center;
+    flex-flow: column nowrap;
+  }
+  .คำถาม {
+    display: flex;
+    text-align: center;
+    flex-flow: column nowrap;
+  }
+  .btn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+  

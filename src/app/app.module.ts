@@ -8,9 +8,10 @@ import { CalappModule } from './calapp/calapp.module';
 import { QappModule } from './qapp/qapp.module';
 import { MatSliderModule } from '@angular/material/slider';
 import { QappQ2Component } from './qapp-q2/qapp-q2.component';
+import { QappQ1Component } from './qapp-q1/qapp-q1.component';
 
 @NgModule({
-  declarations: [AppComponent, QappQ2Component],
+  declarations: [AppComponent, QappQ2Component, QappQ1Component],
   imports: [
     BrowserModule,
     NavBarModule,
