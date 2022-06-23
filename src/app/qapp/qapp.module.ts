@@ -6,6 +6,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { AccordionModule } from 'primeng/accordion';
 import { ButtonModule } from 'primeng/button';
+import { AppRoutingModule } from 'src/app/app.route';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [QappComponent],
@@ -16,6 +18,8 @@ import { ButtonModule } from 'primeng/button';
     MatPaginatorModule,
     AccordionModule,
     ButtonModule,
+    AppRoutingModule,
+    RouterModule,
   ],
 
   exports: [QappComponent],

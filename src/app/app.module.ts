@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { CalappModule } from './calapp/calapp.module';
 import { QappModule } from './qapp/qapp.module';
 import { MatSliderModule } from '@angular/material/slider';
+import { QappQ2Component } from './qapp-q2/qapp-q2.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, QappQ2Component],
   imports: [
     BrowserModule,
     NavBarModule,

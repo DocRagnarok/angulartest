@@ -39,5 +39,6 @@ export class QappComponent implements OnInit {
       alert('เสียใจด้วย  ' + this.text + '  ลองตอบอีกครั้งนะ !');
     }
   }
+  gotoq2() {}
   ngOnInit(): void {}
 }
