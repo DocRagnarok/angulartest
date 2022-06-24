@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-qapp-q1',
   templateUrl: './qapp-q1.component.html',
-  styleUrls: ['./qapp-q1.component.css']
+  styleUrls: ['./qapp-q1.component.css'],
 })
 export class QappQ1Component implements OnInit {
   text: string = '';
@@ -12,7 +12,11 @@ export class QappQ1Component implements OnInit {
   music = new Audio();
 
   closemusic() {
-    this.music.pause();
+    if (this.music.paused) {
+      this.music.play();
+    } else {
+      this.music.pause();
+    }
   }
   buttonclick() {
     if (this.text == '') {
