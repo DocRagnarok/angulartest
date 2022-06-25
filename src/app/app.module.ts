@@ -8,6 +8,7 @@ import { CalappModule } from './calapp/calapp.module';
 import { QappModule } from './qapp/qapp.module';
 import { MatSliderModule } from '@angular/material/slider';
 import { QappQ2Component } from './qapp-q2/qapp-q2.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, QappQ2Component],
@@ -19,6 +20,7 @@ import { QappQ2Component } from './qapp-q2/qapp-q2.component';
     FormsModule,
     QappModule,
     MatSliderModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -36,7 +36,8 @@ export class QappComponent implements OnInit {
     if (this.text2 == '2') {
       alert('ยินดีด้วย  ' + this.text + '  คุณตอบถูก ! ไปข้อต่อไปกันเลย !!');
     } else {
-      alert('เสียใจด้วย  ' + this.text + '  ลองตอบอีกครั้งนะ !');
+      alert('เสียใจด้วย  ' + this.text + '  โอกาสหน้ามาตอบใหม่นะ !');
+      document.getElementById('quiz1').style.display = 'none';
     }
   }
   gotoq2() {}
