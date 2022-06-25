@@ -8,20 +8,17 @@ import { QappQ1Component } from '../qapp-q1/qapp-q1.component';
 const routes: Routes = [
   {
     path: 'quiz',
+    component: QappComponent,
     children: [
-     { path: '1', component: QappQ1Component },
-     { path: '2', component: QappQ2Component }
-    ]
-  }
+      { path: '1', component: QappQ1Component },
+      { path: '2', component: QappQ2Component },
+    ],
+  },
 ];
-
 
 @NgModule({
   declarations: [QappComponent],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-  ],
+  imports: [CommonModule, RouterModule.forChild(routes)],
   exports: [QappComponent],
 })
 export class QappModule {}
