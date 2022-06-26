@@ -1,25 +1,20 @@
-<meta charset="utf-8" />
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1, shrink-to-fit=no"
-/>
 <div class="keyboard-container">
   <div class="naturals-container">
-    <button>
+    <button (click)="pressQButton()" #Qpress>
       <p style="color: rgb(133, 57, 27); opacity: 50%">Q</p>
     </button>
-    <button>
+    <button #Wpress>
       <p style="color: rgb(133, 57, 27); opacity: 50%">W</p>
     </button>
-    <button>
+    <button #Epress>
       <p style="color: rgb(133, 57, 27); opacity: 50%">E</p></button
-    ><button>
+    ><button #Rpress>
       <p style="color: rgb(133, 57, 27); opacity: 50%">R</p></button
-    ><button>
+    ><button #Tpress>
       <p style="color: rgb(133, 57, 27); opacity: 50%">T</p></button
-    ><button>
+    ><button #Ypress>
       <p style="color: rgb(133, 57, 27); opacity: 50%">Y</p></button
-    ><button>
+    ><button #Upress>
       <p style="color: rgb(133, 57, 27); opacity: 50%">U</p>
     </button>
   </div>
@@ -32,21 +27,21 @@
   </div>
   <div class="keyboard-container">
     <div class="naturals-container">
-      <button>
+      <button #Vpress>
         <p style="color: rgb(133, 57, 27); opacity: 50%">V</p>
       </button>
-      <button>
+      <button #Bpress>
         <p style="color: rgb(133, 57, 27); opacity: 50%">B</p>
       </button>
-      <button>
+      <button #Npress>
         <p style="color: rgb(133, 57, 27); opacity: 50%">N</p></button
-      ><button>
+      ><button #Mpress>
         <p style="color: rgb(133, 57, 27); opacity: 50%">M</p></button
-      ><button>
+      ><button #COMMApress>
         <p style="color: rgb(133, 57, 27); opacity: 50%">,</p></button
-      ><button>
+      ><button #DOTpress>
         <p style="color: rgb(133, 57, 27); opacity: 50%">.</p></button
-      ><button>
+      ><button #SLAUGHTpress>
         <p style="color: rgb(133, 57, 27); opacity: 50%">/</p>
       </button>
     </div>
@@ -59,4 +54,6 @@
     </div>
   </div>
 </div>
-<div *ngFor="let test of testlist">{{ test.isbn }} {{ test.authors }}</div>
+<div class="test" *ngFor="let test of testlist; index as i">
+  {{ test.isbn }} {{ test.authors }}
+</div>

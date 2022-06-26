@@ -78,7 +78,7 @@ button:focus {
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9), 0 -1px 1px rgba(0, 0, 0, 0.1);
   color: #1b1b1e;
 }
-.naturals-container button:active {
+.naturals-container button.active {
   background: rgb(171, 206, 226);
   border: 1px solid #39394e;
   border-radius: 0 0 6px 6px;

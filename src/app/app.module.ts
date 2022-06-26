@@ -9,6 +9,7 @@ import { QappModule } from './qapp/qapp.module';
 import { MatSliderModule } from '@angular/material/slider';
 import { QappQ2Component } from './qapp-q2/qapp-q2.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PianoappModule } from './pianoapp/pianoapp.module';
 
 @NgModule({
   declarations: [AppComponent, QappQ2Component],
