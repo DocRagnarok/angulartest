@@ -8,9 +8,8 @@ describe('QappQ2Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QappQ2Component ]
-    })
-    .compileComponents();
+      declarations: [QappQ2Component],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(QappQ2Component);
     component = fixture.componentInstance;
