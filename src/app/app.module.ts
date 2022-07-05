@@ -10,6 +10,9 @@ import { MatSliderModule } from '@angular/material/slider';
 import { QappQ2Component } from './qapp-q2/qapp-q2.component';
 import { HttpClientModule } from '@angular/common/http';
 import { QappQ1Component } from './qapp-q1/qapp-q1.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [AppComponent, QappQ2Component, QappQ1Component],
@@ -22,6 +25,9 @@ import { QappQ1Component } from './qapp-q1/qapp-q1.component';
     QappModule,
     MatSliderModule,
     HttpClientModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

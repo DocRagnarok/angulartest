@@ -4,3 +4,8 @@
 a {
   text-decoration: none;
 }
+.bg {
+  background: lightblue url("/assets/Image/bg.jpg") fixed center repeat;
+  height: 1600px;
+  opacity: 35%;
+}

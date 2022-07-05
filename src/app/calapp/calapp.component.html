@@ -1,40 +1,45 @@
-<h1>calapp works!</h1>
-<div class="wrapper">
-  <section class="หน้าจอ">
-    <div class="ตัวเก่า" data-operand-previous>{{ first }}</div>
-    <div class="ตัวที่จะกด" data-operand-current>{{ second }}</div>
-    <div class="คำตอบ" kumtob>{{ equal }}</div>
-  </section>
-  <section class="ปุ่มกด">
-    <div class="ปุ่ม">
-      <button (click)="onClickClear()" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
-        {{ clear }}Clear
-      </button>
-      <button (click)="onClickOperation('buak')" class="ปุ่มคำสั่ง">บวก</button>
-      <button (click)="onClickOperation('rob')" class="ปุ่มคำสั่ง">ลบ</button>
-      <button (click)="onClickOperation('koon')" class="ปุ่มคำสั่ง">คูณ</button>
-      <button (click)="onClickOperation('han')" class="ปุ่มคำสั่ง">หาร</button
-      ><br />
-      <button (click)="onClick('7')" class="ปุ่มธรรมดาก็พอ">7</button>
-      <button (click)="onClick('8')" class="ปุ่มธรรมดาก็พอ">8</button>
-      <button (click)="onClick('9')" class="ปุ่มธรรมดาก็พอ">9</button><br />
-      <button (click)="onClick('4')" class="ปุ่มธรรมดาก็พอ">4</button>
-      <button (click)="onClick('5')" class="ปุ่มธรรมดาก็พอ">5</button>
-      <button (click)="onClick('6')" class="ปุ่มธรรมดาก็พอ">6</button><br />
-      <button (click)="onClick('1')" class="ปุ่มธรรมดาก็พอ">1</button>
-      <button (click)="onClick('2')" class="ปุ่มธรรมดาก็พอ">2</button>
-      <button (click)="onClick('3')" class="ปุ่มธรรมดาก็พอ">3</button><br />
-      <button (click)="onClickEqual()" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
-        =
-      </button>
-      <button (click)="onClick('0')" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
-        0
-      </button>
-      <button (click)="onClickDot('.')" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
-        .</button
-      ><br />
+<div class="bg">
+  <div class="wrapper">
+    <section class="หน้าจอ">
+      <div class="ตัวเก่า" data-operand-previous>{{ first }}</div>
+      <div class="ตัวที่จะกด" data-operand-current>{{ second }}</div>
+      <div class="คำตอบ" kumtob>{{ equal }}</div>
+    </section>
+    <section class="ปุ่มกด">
+      <div class="ปุ่ม">
+        <button (click)="onClickClear()" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
+          {{ clear }}Clear
+        </button>
+        <button (click)="onClickOperation('buak')" class="ปุ่มคำสั่ง">
+          บวก
+        </button>
+        <button (click)="onClickOperation('rob')" class="ปุ่มคำสั่ง">ลบ</button>
+        <button (click)="onClickOperation('koon')" class="ปุ่มคำสั่ง">
+          คูณ
+        </button>
+        <button (click)="onClickOperation('han')" class="ปุ่มคำสั่ง">หาร</button
+        ><br />
+        <button (click)="onClick('7')" class="ปุ่มธรรมดาก็พอ">7</button>
+        <button (click)="onClick('8')" class="ปุ่มธรรมดาก็พอ">8</button>
+        <button (click)="onClick('9')" class="ปุ่มธรรมดาก็พอ">9</button><br />
+        <button (click)="onClick('4')" class="ปุ่มธรรมดาก็พอ">4</button>
+        <button (click)="onClick('5')" class="ปุ่มธรรมดาก็พอ">5</button>
+        <button (click)="onClick('6')" class="ปุ่มธรรมดาก็พอ">6</button><br />
+        <button (click)="onClick('1')" class="ปุ่มธรรมดาก็พอ">1</button>
+        <button (click)="onClick('2')" class="ปุ่มธรรมดาก็พอ">2</button>
+        <button (click)="onClick('3')" class="ปุ่มธรรมดาก็พอ">3</button><br />
+        <button (click)="onClickEqual()" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
+          =
+        </button>
+        <button (click)="onClick('0')" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
+          0
+        </button>
+        <button (click)="onClickDot('.')" class="ปุ่มขอขนาดเบิ้มๆคือลือหน่ะ">
+          .</button
+        ><br />
 
-      <button (click)="onClickDel()" class="ปุ่มลบ">del</button>
-    </div>
-  </section>
+        <button (click)="onClickDel()" class="ปุ่มลบ">del</button>
+      </div>
+    </section>
+  </div>
 </div>
